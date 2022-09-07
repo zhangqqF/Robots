@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Gluon_6L3_v4">
+  <link
+    name="link0">
+    <inertial>
+      <origin
+        xyz="2.78935914017553E-18 6.00214303603146E-11 0.0271404483614374"
+        rpy="0 0 0" />
+      <mass
+        value="0.524001417146026" />
+      <inertia
+        ixx="0.000535467082580035"
+        ixy="-5.80561098039586E-10"
+        ixz="-4.91827773164595E-20"
+        iyy="0.000535467122847014"
+        iyz="1.9183735613492E-11"
+        izz="0.000799852045598815" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.010414354505053 7.21484246034699E-06 0.0127550304440726"
+        rpy="0 0 0" />
+      <mass
+        value="0.073330303750356" />
+      <inertia
+        ixx="3.05575215370664E-05"
+        ixy="4.98505771348352E-10"
+        ixz="7.9496492545355E-06"
+        iyy="2.96845484254722E-05"
+        iyz="-1.02765893583384E-09"
+        izz="2.73961191670326E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.10503"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="link0" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="150"
+      velocity="3.15" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.0872101271182029 5.99202625574599E-10 0.00997880517526155"
+        rpy="0 0 0" />
+      <mass
+        value="0.252327054669583" />
+      <inertia
+        ixx="7.33886640772952E-05"
+        ixy="9.95956129391653E-10"
+        ixz="-2.52105289290266E-12"
+        iyy="0.000150270494249393"
+        iyz="6.27133356438553E-12"
+        izz="0.000146347035031901" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="revolute">
+    <origin
+      xyz="0.080089 0 0"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="150"
+      velocity="3.15" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.0955940989191396 -2.37353415503242E-06 0.0096769348935872"
+        rpy="0 0 0" />
+      <mass
+        value="0.230206262760067" />
+      <inertia
+        ixx="7.1682151069334E-05"
+        ixy="1.00709986296239E-09"
+        ixz="3.04659433507066E-10"
+        iyy="0.00014857808997549"
+        iyz="3.25881137642561E-10"
+        izz="0.000143637599771189" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="revolute">
+    <origin
+      xyz="0.17442 0 0.084516"
+      rpy="3.1416 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="150"
+      velocity="3.15" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.0153497222592215 -6.452419437921E-06 0.00931116433351614"
+        rpy="0 0 0" />
+      <mass
+        value="0.0820185031790025" />
+      <inertia
+        ixx="2.83154357090867E-05"
+        ixy="1.02138760212871E-09"
+        ixz="7.94964673348254E-06"
+        iyy="3.02771641384983E-05"
+        iyz="-4.97450356721805E-10"
+        izz="3.11501431057351E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint4"
+    type="revolute">
+    <origin
+      xyz="0.17442 0 0.080089"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="28"
+      velocity="3.2" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="0.0159853013938838 -6.45057618139906E-06 0.00931116479457528"
+        rpy="0 0 0" />
+      <mass
+        value="0.0820185010219473" />
+      <inertia
+        ixx="2.83154341302951E-05"
+        ixy="1.02765893572239E-09"
+        ixz="7.9496492545355E-06"
+        iyy="3.02771649183757E-05"
+        iyz="-4.98505771366619E-10"
+        izz="3.11501380299691E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Gluon_6L3_v4/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint5"
+    type="revolute">
+    <origin
+      xyz="0.080089 0 0"
+      rpy="3.1416 1.5708 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="28"
+      velocity="3.2" />
+  </joint>
+</robot>
